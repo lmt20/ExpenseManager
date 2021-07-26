@@ -75,7 +75,7 @@ struct ExpenseView: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        NavigationLink(destination: NavigationLazyView(Text("Add Expense View"))) {
+                        NavigationLink(destination: NavigationLazyView(AddExpenseView(viewModel: AddExpenseViewModel()))) {
                             Image("plus_icon")
                                 .resizable()
                                 .frame(width: 32, height: 32)

@@ -9,7 +9,7 @@
         <attribute name="tag" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
-        <attribute name="updateAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
     <elements>
         <element name="ExpenseCD" positionX="-63" positionY="-18" width="128" height="164"/>

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ExpenseModelView: View {
     var isIncome: Bool
-    var type: String { isIncome ? TRANS_TYPE_INCOME : TRANS_TYPE_EXPENSE }
-    var fetchRequest: FetchRequest<ExpenseCD>!
+    var type: String
+    var fetchRequest: FetchRequest<ExpenseCD>
     var expense: FetchedResults<ExpenseCD> { fetchRequest.wrappedValue }
     @AppStorage(UD_EXPENSE_CURRENCY) var CURRENCY: String = ""
     
@@ -24,7 +24,8 @@ struct ExpenseModelView: View {
     
     init(isIncome: Bool, filter: ExpenseCDFilterTime, categTag: String? = nil) {
         self.isIncome = isIncome
-        let sortDescriptor = NSSortDescriptor(key: "occoredOn", ascending: false)
+        self.type = isIncome ? TRANS_TYPE_INCOME : TRANS_TYPE_EXPENSE
+        let sortDescriptor = NSSortDescriptor(key: "occuredOn", ascending: false)
         if filter == .all {
             var predicate: NSPredicate!
             if let tag = categTag {
