@@ -1,20 +1,47 @@
+
 //
-//  ExpenseManagerApp.swift
-//  ExpenseManager
+//  ExpensoApp.swift
+//  Expenso
 //
-//  Created by it on 22/07/2021.
+//  Created by Sameer Nawaz on 31/01/21.
 //
 
 import SwiftUI
+import CoreData
 
 @main
-struct ExpenseManagerApp: App {
-    let persistenceController = PersistenceController.shared
-
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+struct ExpenseManager: App {
+    
+    init() {
+        self.setDefaultPreferences()
+    }
+    
+    private func setDefaultPreferences() {
+        let currency = UserDefaults.standard.string(forKey: UD_EXPENSE_CURRENCY)
+        if currency == nil {
+            UserDefaults.standard.set("$", forKey: UD_EXPENSE_CURRENCY)
         }
     }
+    
+    var body: some Scene {
+        WindowGroup {
+            if UserDefaults.standard.bool(forKey: UD_USE_BIOMETRIC) {
+                AuthenticateView()
+                    .environment(\.managedObjectContext, persistentContainer.viewContext)
+            } else {
+                ExpenseView()
+                    .environment(\.managedObjectContext, persistentContainer.viewContext)
+            }
+        }
+    }
+    
+    var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "ExpenseManager")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
+    }()
 }

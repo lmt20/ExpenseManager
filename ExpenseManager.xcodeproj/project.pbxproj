@@ -3,27 +3,87 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1830A5BB26AA64DD00B42972 /* ExpenseCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830A5BA26AA64DD00B42972 /* ExpenseCD.swift */; };
+		1830A5BE26AA66DE00B42972 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830A5BD26AA66DE00B42972 /* DateExtension.swift */; };
+		1830A5C126AA6F0100B42972 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830A5C026AA6F0100B42972 /* Models.swift */; };
+		1830A5C426AA947700B42972 /* ExpenseMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830A5C326AA947700B42972 /* ExpenseMainView.swift */; };
+		1830A5CC26AA999500B42972 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830A5CB26AA999500B42972 /* LottieView.swift */; };
+		1830A5D126AA9BEF00B42972 /* empty-face.json in Resources */ = {isa = PBXBuildFile; fileRef = 1830A5D026AA9BEF00B42972 /* empty-face.json */; };
+		1830A5D826AAA26F00B42972 /* ExpenseModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830A5D726AAA26F00B42972 /* ExpenseModelView.swift */; };
+		1878395C26AE54AF000E4FE8 /* ExpenseFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878395B26AE54AF000E4FE8 /* ExpenseFilterView.swift */; };
+		1878395F26AE5BA7000E4FE8 /* ExpenseFilterChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878395E26AE5BA7000E4FE8 /* ExpenseFilterChartView.swift */; };
+		1878396226AE5E90000E4FE8 /* ExpenseTransView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878396126AE5E90000E4FE8 /* ExpenseTransView.swift */; };
+		1878396626AE657F000E4FE8 /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878396526AE657F000E4FE8 /* AddExpenseView.swift */; };
+		1878396926AE662B000E4FE8 /* AddExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878396826AE662B000E4FE8 /* AddExpenseViewModel.swift */; };
+		1878396C26AE6935000E4FE8 /* AttachmentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878396B26AE6935000E4FE8 /* AttachmentHandler.swift */; };
+		18B5257926AA60BE00D8FCB5 /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5257826AA60BE00D8FCB5 /* ExpenseView.swift */; };
 		18E9237226A920A50030A61B /* ExpenseManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9237126A920A50030A61B /* ExpenseManagerApp.swift */; };
-		18E9237426A920A50030A61B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9237326A920A50030A61B /* ContentView.swift */; };
 		18E9237626A920A60030A61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E9237526A920A60030A61B /* Assets.xcassets */; };
 		18E9237926A920A60030A61B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E9237826A920A60030A61B /* Preview Assets.xcassets */; };
 		18E9237B26A920A60030A61B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9237A26A920A60030A61B /* Persistence.swift */; };
 		18E9237E26A920A60030A61B /* ExpenseManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18E9237C26A920A60030A61B /* ExpenseManager.xcdatamodeld */; };
+		18E9238726A921780030A61B /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9238626A921780030A61B /* Configs.swift */; };
+		18E9238C26A922640030A61B /* AuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9238B26A922640030A61B /* AuthenticateView.swift */; };
+		18E9239026A922C70030A61B /* ColorExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9238F26A922C70030A61B /* ColorExtenstion.swift */; };
+		18E9239326A925DF0030A61B /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9239226A925DF0030A61B /* TextView.swift */; };
+		18E923A126A926480030A61B /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E9239726A926480030A61B /* Inter-Regular.ttf */; };
+		18E923A226A926480030A61B /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E9239826A926480030A61B /* Inter-Thin.ttf */; };
+		18E923A326A926480030A61B /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E9239926A926480030A61B /* Inter-ExtraBold.ttf */; };
+		18E923A426A926480030A61B /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E9239A26A926480030A61B /* Inter-Medium.ttf */; };
+		18E923A526A926480030A61B /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E9239B26A926480030A61B /* Inter-SemiBold.ttf */; };
+		18E923A626A926480030A61B /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E9239C26A926480030A61B /* Inter-Bold.ttf */; };
+		18E923A726A926480030A61B /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E9239D26A926480030A61B /* Inter-ExtraLight.ttf */; };
+		18E923A826A926480030A61B /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E9239E26A926480030A61B /* Inter-Light.ttf */; };
+		18E923A926A926480030A61B /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18E9239F26A926480030A61B /* OFL.txt */; };
+		18E923AA26A926480030A61B /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E923A026A926480030A61B /* Inter-Black.ttf */; };
+		18E923AD26A926970030A61B /* InterFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E923AC26A926970030A61B /* InterFontModifier.swift */; };
+		FF8F1C04E9A04B81498F85A6 /* Pods_ExpenseManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6380A7F4AC8D24788CAC2077 /* Pods_ExpenseManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07C04B9B02C4440DDBB332B1 /* Pods-ExpenseManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseManager.debug.xcconfig"; path = "Target Support Files/Pods-ExpenseManager/Pods-ExpenseManager.debug.xcconfig"; sourceTree = "<group>"; };
+		1830A5BA26AA64DD00B42972 /* ExpenseCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCD.swift; sourceTree = "<group>"; };
+		1830A5BD26AA66DE00B42972 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		1830A5C026AA6F0100B42972 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		1830A5C326AA947700B42972 /* ExpenseMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseMainView.swift; sourceTree = "<group>"; };
+		1830A5CB26AA999500B42972 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		1830A5D026AA9BEF00B42972 /* empty-face.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "empty-face.json"; sourceTree = "<group>"; };
+		1830A5D726AAA26F00B42972 /* ExpenseModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseModelView.swift; sourceTree = "<group>"; };
+		1878395B26AE54AF000E4FE8 /* ExpenseFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseFilterView.swift; sourceTree = "<group>"; };
+		1878395E26AE5BA7000E4FE8 /* ExpenseFilterChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseFilterChartView.swift; sourceTree = "<group>"; };
+		1878396126AE5E90000E4FE8 /* ExpenseTransView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTransView.swift; sourceTree = "<group>"; };
+		1878396526AE657F000E4FE8 /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
+		1878396826AE662B000E4FE8 /* AddExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewModel.swift; sourceTree = "<group>"; };
+		1878396B26AE6935000E4FE8 /* AttachmentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentHandler.swift; sourceTree = "<group>"; };
+		18B5257826AA60BE00D8FCB5 /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
 		18E9236E26A920A50030A61B /* ExpenseManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E9237126A920A50030A61B /* ExpenseManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseManagerApp.swift; sourceTree = "<group>"; };
-		18E9237326A920A50030A61B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18E9237526A920A60030A61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E9237826A920A60030A61B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18E9237A26A920A60030A61B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		18E9237D26A920A60030A61B /* ExpenseManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExpenseManager.xcdatamodel; sourceTree = "<group>"; };
 		18E9237F26A920A60030A61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E9238626A921780030A61B /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		18E9238B26A922640030A61B /* AuthenticateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateView.swift; sourceTree = "<group>"; };
+		18E9238F26A922C70030A61B /* ColorExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtenstion.swift; sourceTree = "<group>"; };
+		18E9239226A925DF0030A61B /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		18E9239726A926480030A61B /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		18E9239826A926480030A61B /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		18E9239926A926480030A61B /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		18E9239A26A926480030A61B /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		18E9239B26A926480030A61B /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		18E9239C26A926480030A61B /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		18E9239D26A926480030A61B /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		18E9239E26A926480030A61B /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		18E9239F26A926480030A61B /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		18E923A026A926480030A61B /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		18E923AC26A926970030A61B /* InterFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterFontModifier.swift; sourceTree = "<group>"; };
+		446DD1C819CF1898CABCFB6C /* Pods-ExpenseManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseManager.release.xcconfig"; path = "Target Support Files/Pods-ExpenseManager/Pods-ExpenseManager.release.xcconfig"; sourceTree = "<group>"; };
+		6380A7F4AC8D24788CAC2077 /* Pods_ExpenseManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpenseManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +91,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF8F1C04E9A04B81498F85A6 /* Pods_ExpenseManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1830A5B926AA64C800B42972 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1830A5BA26AA64DD00B42972 /* ExpenseCD.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		1830A5CE26AA9BDB00B42972 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				1830A5D026AA9BEF00B42972 /* empty-face.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		1878395A26AE549C000E4FE8 /* ExpenseFilter */ = {
+			isa = PBXGroup;
+			children = (
+				1878395B26AE54AF000E4FE8 /* ExpenseFilterView.swift */,
+				1878395E26AE5BA7000E4FE8 /* ExpenseFilterChartView.swift */,
+			);
+			path = ExpenseFilter;
+			sourceTree = "<group>";
+		};
+		1878396426AE6561000E4FE8 /* AddExpense */ = {
+			isa = PBXGroup;
+			children = (
+				1878396526AE657F000E4FE8 /* AddExpenseView.swift */,
+				1878396826AE662B000E4FE8 /* AddExpenseViewModel.swift */,
+			);
+			path = AddExpense;
+			sourceTree = "<group>";
+		};
+		18B5257726AA60A400D8FCB5 /* Expense */ = {
+			isa = PBXGroup;
+			children = (
+				18B5257826AA60BE00D8FCB5 /* ExpenseView.swift */,
+				1830A5C326AA947700B42972 /* ExpenseMainView.swift */,
+				1830A5D726AAA26F00B42972 /* ExpenseModelView.swift */,
+				1878396126AE5E90000E4FE8 /* ExpenseTransView.swift */,
+			);
+			path = Expense;
+			sourceTree = "<group>";
+		};
 		18E9236526A920A50030A61B = {
 			isa = PBXGroup;
 			children = (
 				18E9237026A920A50030A61B /* ExpenseManager */,
 				18E9236F26A920A50030A61B /* Products */,
+				D69286B59AECA8A2CFBCA2B2 /* Pods */,
+				66EEFB1585F575D45F809636 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +164,19 @@
 		18E9237026A920A50030A61B /* ExpenseManager */ = {
 			isa = PBXGroup;
 			children = (
-				18E9237126A920A50030A61B /* ExpenseManagerApp.swift */,
-				18E9237326A920A50030A61B /* ContentView.swift */,
+				1878396426AE6561000E4FE8 /* AddExpense */,
+				1878395A26AE549C000E4FE8 /* ExpenseFilter */,
+				1830A5B926AA64C800B42972 /* CoreData */,
+				18B5257726AA60A400D8FCB5 /* Expense */,
+				18E9238926A922280030A61B /* Authenticate */,
 				18E9237526A920A60030A61B /* Assets.xcassets */,
 				18E9237A26A920A60030A61B /* Persistence.swift */,
 				18E9237F26A920A60030A61B /* Info.plist */,
+				18E9238E26A922AB0030A61B /* Helpers */,
+				18E9239526A9262C0030A61B /* Resources */,
+				18E9237126A920A50030A61B /* ExpenseManagerApp.swift */,
 				18E9237C26A920A60030A61B /* ExpenseManager.xcdatamodeld */,
+				18E9238626A921780030A61B /* Configs.swift */,
 				18E9237726A920A60030A61B /* Preview Content */,
 			);
 			path = ExpenseManager;
@@ -75,6 +190,71 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		18E9238926A922280030A61B /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+				18E9238B26A922640030A61B /* AuthenticateView.swift */,
+			);
+			path = Authenticate;
+			sourceTree = "<group>";
+		};
+		18E9238E26A922AB0030A61B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				18E9238F26A922C70030A61B /* ColorExtenstion.swift */,
+				1830A5C026AA6F0100B42972 /* Models.swift */,
+				1830A5CB26AA999500B42972 /* LottieView.swift */,
+				18E923AC26A926970030A61B /* InterFontModifier.swift */,
+				18E9239226A925DF0030A61B /* TextView.swift */,
+				1830A5BD26AA66DE00B42972 /* DateExtension.swift */,
+				1878396B26AE6935000E4FE8 /* AttachmentHandler.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		18E9239526A9262C0030A61B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1830A5CE26AA9BDB00B42972 /* Animations */,
+				18E9239626A926350030A61B /* InterFonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18E9239626A926350030A61B /* InterFonts */ = {
+			isa = PBXGroup;
+			children = (
+				18E923A026A926480030A61B /* Inter-Black.ttf */,
+				18E9239C26A926480030A61B /* Inter-Bold.ttf */,
+				18E9239926A926480030A61B /* Inter-ExtraBold.ttf */,
+				18E9239D26A926480030A61B /* Inter-ExtraLight.ttf */,
+				18E9239E26A926480030A61B /* Inter-Light.ttf */,
+				18E9239A26A926480030A61B /* Inter-Medium.ttf */,
+				18E9239726A926480030A61B /* Inter-Regular.ttf */,
+				18E9239B26A926480030A61B /* Inter-SemiBold.ttf */,
+				18E9239826A926480030A61B /* Inter-Thin.ttf */,
+				18E9239F26A926480030A61B /* OFL.txt */,
+			);
+			path = InterFonts;
+			sourceTree = "<group>";
+		};
+		66EEFB1585F575D45F809636 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6380A7F4AC8D24788CAC2077 /* Pods_ExpenseManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D69286B59AECA8A2CFBCA2B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07C04B9B02C4440DDBB332B1 /* Pods-ExpenseManager.debug.xcconfig */,
+				446DD1C819CF1898CABCFB6C /* Pods-ExpenseManager.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18E9238226A920A60030A61B /* Build configuration list for PBXNativeTarget "ExpenseManager" */;
 			buildPhases = (
+				6D385EA17F83EFA53F4344C6 /* [CP] Check Pods Manifest.lock */,
 				18E9236A26A920A50030A61B /* Sources */,
 				18E9236B26A920A50030A61B /* Frameworks */,
 				18E9236C26A920A50030A61B /* Resources */,
+				A2B66DFC9A8B2389A753DA83 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,21 +314,91 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1830A5D126AA9BEF00B42972 /* empty-face.json in Resources */,
+				18E923A826A926480030A61B /* Inter-Light.ttf in Resources */,
+				18E923A926A926480030A61B /* OFL.txt in Resources */,
+				18E923A326A926480030A61B /* Inter-ExtraBold.ttf in Resources */,
+				18E923A226A926480030A61B /* Inter-Thin.ttf in Resources */,
+				18E923A626A926480030A61B /* Inter-Bold.ttf in Resources */,
+				18E923A426A926480030A61B /* Inter-Medium.ttf in Resources */,
 				18E9237926A920A60030A61B /* Preview Assets.xcassets in Resources */,
+				18E923AA26A926480030A61B /* Inter-Black.ttf in Resources */,
+				18E923A126A926480030A61B /* Inter-Regular.ttf in Resources */,
 				18E9237626A920A60030A61B /* Assets.xcassets in Resources */,
+				18E923A726A926480030A61B /* Inter-ExtraLight.ttf in Resources */,
+				18E923A526A926480030A61B /* Inter-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D385EA17F83EFA53F4344C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExpenseManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2B66DFC9A8B2389A753DA83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExpenseManager/Pods-ExpenseManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExpenseManager/Pods-ExpenseManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExpenseManager/Pods-ExpenseManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18E9236A26A920A50030A61B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1830A5C426AA947700B42972 /* ExpenseMainView.swift in Sources */,
+				1878395F26AE5BA7000E4FE8 /* ExpenseFilterChartView.swift in Sources */,
+				18E9239026A922C70030A61B /* ColorExtenstion.swift in Sources */,
+				18E9238726A921780030A61B /* Configs.swift in Sources */,
+				1878396226AE5E90000E4FE8 /* ExpenseTransView.swift in Sources */,
+				1878396926AE662B000E4FE8 /* AddExpenseViewModel.swift in Sources */,
+				18B5257926AA60BE00D8FCB5 /* ExpenseView.swift in Sources */,
+				1830A5D826AAA26F00B42972 /* ExpenseModelView.swift in Sources */,
+				1830A5C126AA6F0100B42972 /* Models.swift in Sources */,
+				1830A5BB26AA64DD00B42972 /* ExpenseCD.swift in Sources */,
+				18E923AD26A926970030A61B /* InterFontModifier.swift in Sources */,
 				18E9237B26A920A60030A61B /* Persistence.swift in Sources */,
-				18E9237426A920A50030A61B /* ContentView.swift in Sources */,
+				1830A5BE26AA66DE00B42972 /* DateExtension.swift in Sources */,
+				18E9239326A925DF0030A61B /* TextView.swift in Sources */,
+				1878395C26AE54AF000E4FE8 /* ExpenseFilterView.swift in Sources */,
 				18E9237E26A920A60030A61B /* ExpenseManager.xcdatamodeld in Sources */,
+				1830A5CC26AA999500B42972 /* LottieView.swift in Sources */,
+				18E9238C26A922640030A61B /* AuthenticateView.swift in Sources */,
+				1878396626AE657F000E4FE8 /* AddExpenseView.swift in Sources */,
+				1878396C26AE6935000E4FE8 /* AttachmentHandler.swift in Sources */,
 				18E9237226A920A50030A61B /* ExpenseManagerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +524,7 @@
 		};
 		18E9238326A920A60030A61B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07C04B9B02C4440DDBB332B1 /* Pods-ExpenseManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +547,7 @@
 		};
 		18E9238426A920A60030A61B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 446DD1C819CF1898CABCFB6C /* Pods-ExpenseManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
