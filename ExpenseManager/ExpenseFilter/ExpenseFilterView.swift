@@ -58,9 +58,9 @@ struct ExpenseFilterView: View {
                     }
                     ScrollView(showsIndicators: false) {
                         if let isIncome = isIncome {
-                            Text("ExpensFilterChartView")
+                            ExpenseFilterChartView(isIncome: isIncome, filter: filter)
                                 .frame(width: 350, height: 350)
-                            Text("ExpenseFilterTransList")
+                            ExpenseFilterTransList(isIncome: isIncome, filter: filter, tag: categTag)
                         }
                         
                         if let tag = categTag {

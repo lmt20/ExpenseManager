@@ -40,12 +40,14 @@ struct ExpenseFilterTransList: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ForEach(self.fetchRequest.wrappedValue) { expenseObj in
+            NavigationLink(destination: ExpenseDetailedView(expenseObj: expenseObj), label: { ExpenseTransView(expenseObj: expenseObj) })
+        }
     }
 }
 
 struct ExpenseFilterTransList_Previews: PreviewProvider {
     static var previews: some View {
-        ExpenseFilterTransList()
+        ExpenseFilterTransList(isIncome: true, filter: .all, tag: TRANS_TAG_TRANSPORT)
     }
 }

@@ -45,6 +45,12 @@
 		18E923A926A926480030A61B /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18E9239F26A926480030A61B /* OFL.txt */; };
 		18E923AA26A926480030A61B /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E923A026A926480030A61B /* Inter-Black.ttf */; };
 		18E923AD26A926970030A61B /* InterFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E923AC26A926970030A61B /* InterFontModifier.swift */; };
+		E34F8A7126AFB2C500ACA07B /* ExpenseDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F8A6F26AFB2C500ACA07B /* ExpenseDetailedView.swift */; };
+		E34F8A7226AFB2C500ACA07B /* ExpenseDetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F8A7026AFB2C500ACA07B /* ExpenseDetailedViewModel.swift */; };
+		E34F8A7626AFB64800ACA07B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F8A7526AFB64800ACA07B /* AboutView.swift */; };
+		E34F8A8426AFB66B00ACA07B /* ExpenseCSVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F8A8126AFB66B00ACA07B /* ExpenseCSVModel.swift */; };
+		E34F8A8526AFB66B00ACA07B /* ExpenseSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F8A8226AFB66B00ACA07B /* ExpenseSettingsViewModel.swift */; };
+		E34F8A8626AFB66B00ACA07B /* ExpenseSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F8A8326AFB66B00ACA07B /* ExpenseSettingsView.swift */; };
 		FF8F1C04E9A04B81498F85A6 /* Pods_ExpenseManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6380A7F4AC8D24788CAC2077 /* Pods_ExpenseManager.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +98,12 @@
 		18E923AC26A926970030A61B /* InterFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterFontModifier.swift; sourceTree = "<group>"; };
 		446DD1C819CF1898CABCFB6C /* Pods-ExpenseManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseManager.release.xcconfig"; path = "Target Support Files/Pods-ExpenseManager/Pods-ExpenseManager.release.xcconfig"; sourceTree = "<group>"; };
 		6380A7F4AC8D24788CAC2077 /* Pods_ExpenseManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpenseManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34F8A6F26AFB2C500ACA07B /* ExpenseDetailedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseDetailedView.swift; sourceTree = "<group>"; };
+		E34F8A7026AFB2C500ACA07B /* ExpenseDetailedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseDetailedViewModel.swift; sourceTree = "<group>"; };
+		E34F8A7526AFB64800ACA07B /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		E34F8A8126AFB66B00ACA07B /* ExpenseCSVModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseCSVModel.swift; sourceTree = "<group>"; };
+		E34F8A8226AFB66B00ACA07B /* ExpenseSettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseSettingsViewModel.swift; sourceTree = "<group>"; };
+		E34F8A8326AFB66B00ACA07B /* ExpenseSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseSettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +185,11 @@
 		18E9237026A920A50030A61B /* ExpenseManager */ = {
 			isa = PBXGroup;
 			children = (
+				E34F8A7426AFB64800ACA07B /* About */,
+				E34F8A8026AFB66B00ACA07B /* ExpenseSettings */,
 				1878396426AE6561000E4FE8 /* AddExpense */,
 				1878395A26AE549C000E4FE8 /* ExpenseFilter */,
+				E34F8A6E26AFB2C500ACA07B /* ExpenseDetailed */,
 				1830A5B926AA64C800B42972 /* CoreData */,
 				18B5257726AA60A400D8FCB5 /* Expense */,
 				18E9238926A922280030A61B /* Authenticate */,
@@ -265,6 +280,33 @@
 				446DD1C819CF1898CABCFB6C /* Pods-ExpenseManager.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E34F8A6E26AFB2C500ACA07B /* ExpenseDetailed */ = {
+			isa = PBXGroup;
+			children = (
+				E34F8A6F26AFB2C500ACA07B /* ExpenseDetailedView.swift */,
+				E34F8A7026AFB2C500ACA07B /* ExpenseDetailedViewModel.swift */,
+			);
+			path = ExpenseDetailed;
+			sourceTree = "<group>";
+		};
+		E34F8A7426AFB64800ACA07B /* About */ = {
+			isa = PBXGroup;
+			children = (
+				E34F8A7526AFB64800ACA07B /* AboutView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		E34F8A8026AFB66B00ACA07B /* ExpenseSettings */ = {
+			isa = PBXGroup;
+			children = (
+				E34F8A8126AFB66B00ACA07B /* ExpenseCSVModel.swift */,
+				E34F8A8226AFB66B00ACA07B /* ExpenseSettingsViewModel.swift */,
+				E34F8A8326AFB66B00ACA07B /* ExpenseSettingsView.swift */,
+			);
+			path = ExpenseSettings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,12 +434,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1830A5C426AA947700B42972 /* ExpenseMainView.swift in Sources */,
+				E34F8A8526AFB66B00ACA07B /* ExpenseSettingsViewModel.swift in Sources */,
 				1878395F26AE5BA7000E4FE8 /* ExpenseFilterChartView.swift in Sources */,
 				18E9239026A922C70030A61B /* ColorExtenstion.swift in Sources */,
 				18E9238726A921780030A61B /* Configs.swift in Sources */,
 				1878396226AE5E90000E4FE8 /* ExpenseTransView.swift in Sources */,
+				E34F8A8426AFB66B00ACA07B /* ExpenseCSVModel.swift in Sources */,
+				E34F8A7126AFB2C500ACA07B /* ExpenseDetailedView.swift in Sources */,
 				1878396926AE662B000E4FE8 /* AddExpenseViewModel.swift in Sources */,
 				18B5257926AA60BE00D8FCB5 /* ExpenseView.swift in Sources */,
+				E34F8A7626AFB64800ACA07B /* AboutView.swift in Sources */,
+				E34F8A7226AFB2C500ACA07B /* ExpenseDetailedViewModel.swift in Sources */,
+				E34F8A8626AFB66B00ACA07B /* ExpenseSettingsView.swift in Sources */,
 				1830A5D826AAA26F00B42972 /* ExpenseModelView.swift in Sources */,
 				1830A5C126AA6F0100B42972 /* Models.swift in Sources */,
 				1830A5BB26AA64DD00B42972 /* ExpenseCD.swift in Sources */,

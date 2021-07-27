@@ -29,12 +29,12 @@ struct ExpenseView: View {
                 
                 VStack {
                     NavigationLink(
-                        destination: Text("Setting"),
+                        destination: ExpenseSettingsView(),
                         isActive: $displaySettings,
                         label: {}
                     )
                     NavigationLink(
-                        destination: Text("About"),
+                        destination: AboutView(),
                         isActive: $displayAbout,
                         label: {}
                     )

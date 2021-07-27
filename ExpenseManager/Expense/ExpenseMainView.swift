@@ -97,7 +97,7 @@ struct ExpenseMainView: View {
                 }.padding(4)
                 
                 ForEach(self.fetchRequest.wrappedValue) { expenseObj in
-                    NavigationLink(destination: Text("ExpenseDetailView")) {
+                    NavigationLink(destination: ExpenseDetailedView(expenseObj: expenseObj)) {
                         ExpenseTransView(expenseObj: expenseObj)
                     }
                 }
