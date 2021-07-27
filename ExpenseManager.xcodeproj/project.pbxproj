@@ -22,6 +22,8 @@
 		1878396C26AE6935000E4FE8 /* AttachmentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878396B26AE6935000E4FE8 /* AttachmentHandler.swift */; };
 		1878396F26AE885C000E4FE8 /* DropdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878396E26AE885C000E4FE8 /* DropdownButton.swift */; };
 		1878397226AEA480000E4FE8 /* DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878397126AEA480000E4FE8 /* DismissKeyboard.swift */; };
+		1878397526AEB4BF000E4FE8 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878397426AEB4BF000E4FE8 /* ChartView.swift */; };
+		1878397C26AEBABD000E4FE8 /* ExpenseFilterTransList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878397B26AEBABD000E4FE8 /* ExpenseFilterTransList.swift */; };
 		18B5257926AA60BE00D8FCB5 /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5257826AA60BE00D8FCB5 /* ExpenseView.swift */; };
 		18E9237226A920A50030A61B /* ExpenseManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9237126A920A50030A61B /* ExpenseManagerApp.swift */; };
 		18E9237626A920A60030A61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E9237526A920A60030A61B /* Assets.xcassets */; };
@@ -63,6 +65,8 @@
 		1878396B26AE6935000E4FE8 /* AttachmentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentHandler.swift; sourceTree = "<group>"; };
 		1878396E26AE885C000E4FE8 /* DropdownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownButton.swift; sourceTree = "<group>"; };
 		1878397126AEA480000E4FE8 /* DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboard.swift; sourceTree = "<group>"; };
+		1878397426AEB4BF000E4FE8 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		1878397B26AEBABD000E4FE8 /* ExpenseFilterTransList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseFilterTransList.swift; sourceTree = "<group>"; };
 		18B5257826AA60BE00D8FCB5 /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
 		18E9236E26A920A50030A61B /* ExpenseManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E9237126A920A50030A61B /* ExpenseManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseManagerApp.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 			children = (
 				1878395B26AE54AF000E4FE8 /* ExpenseFilterView.swift */,
 				1878395E26AE5BA7000E4FE8 /* ExpenseFilterChartView.swift */,
+				1878397B26AEBABD000E4FE8 /* ExpenseFilterTransList.swift */,
 			);
 			path = ExpenseFilter;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				1830A5CB26AA999500B42972 /* LottieView.swift */,
 				18E923AC26A926970030A61B /* InterFontModifier.swift */,
 				18E9239226A925DF0030A61B /* TextView.swift */,
+				1878397426AEB4BF000E4FE8 /* ChartView.swift */,
 				1878397126AEA480000E4FE8 /* DismissKeyboard.swift */,
 				1878396E26AE885C000E4FE8 /* DropdownButton.swift */,
 				1830A5BD26AA66DE00B42972 /* DateExtension.swift */,
@@ -403,11 +409,13 @@
 				1878396F26AE885C000E4FE8 /* DropdownButton.swift in Sources */,
 				1878395C26AE54AF000E4FE8 /* ExpenseFilterView.swift in Sources */,
 				18E9237E26A920A60030A61B /* ExpenseManager.xcdatamodeld in Sources */,
+				1878397C26AEBABD000E4FE8 /* ExpenseFilterTransList.swift in Sources */,
 				1830A5CC26AA999500B42972 /* LottieView.swift in Sources */,
 				18E9238C26A922640030A61B /* AuthenticateView.swift in Sources */,
 				1878396626AE657F000E4FE8 /* AddExpenseView.swift in Sources */,
 				1878396C26AE6935000E4FE8 /* AttachmentHandler.swift in Sources */,
 				18E9237226A920A50030A61B /* ExpenseManagerApp.swift in Sources */,
+				1878397526AEB4BF000E4FE8 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
